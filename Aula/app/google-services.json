@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934587554643",
+    "project_id": "aula-lite",
+    "storage_bucket": "aula-lite.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934587554643:android:a13a2a85cc86952b0a1fa6",
+        "android_client_info": {
+          "package_name": "com.example.aula"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFxo84AI357NFIKT1p6KgvprlDPWovTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
