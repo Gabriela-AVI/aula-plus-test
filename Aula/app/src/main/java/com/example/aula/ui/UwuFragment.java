@@ -13,6 +13,7 @@ import com.example.aula.R;
 import com.example.aula.data.InMemoryNoticeRepository;
 import com.example.aula.viewmodel.NoticeViewModel;
 import com.example.aula.viewmodel.NoticeViewModelFactory;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.snackbar.Snackbar;
 
 public class UwuFragment extends Fragment {
@@ -25,8 +26,8 @@ public class UwuFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // PARA VISUALIZAR LA LISTA DE AVISOS ***
         TextView uwuText = view.findViewById(R.id.uwuText);
-
 
         InMemoryNoticeRepository repo = InMemoryNoticeRepository.getInstance();
 
@@ -39,12 +40,21 @@ public class UwuFragment extends Fragment {
 
         noticeVm.getListado().observe(getViewLifecycleOwner(), uwuText::setText);
 
-        // Observa errores "persistentes" (no son eventos)
         noticeVm.getError().observe(getViewLifecycleOwner(), err -> {
             if (err != null) {
                 Snackbar.make(view, err, Snackbar.LENGTH_LONG).show();
             }
         });
+        //***
+
+        //BOTÓN BORRAR TODOS LOS AVISOS
+
+        MaterialButton btnUwu = view.findViewById(R.id.btnUwu);
+
+        btnUwu.setOnClickListener(v -> noticeVm.deleteAll());
+
 
     }
+
+
 }
