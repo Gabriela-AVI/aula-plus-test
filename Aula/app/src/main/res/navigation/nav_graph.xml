@@ -13,15 +13,16 @@
             android:id="@+id/action_gate_to_login"
             app:destination="@id/loginFragment"
             app:popUpTo="@id/authGateFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
 
         <action
             android:id="@+id/action_gate_to_home"
             app:destination="@id/homeFragment"
             app:popUpTo="@id/authGateFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
 
     </fragment>
+
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.aula.ui.LoginFragment"
@@ -29,13 +30,13 @@
 
         <action
             android:id="@+id/action_login_to_register"
-            app:destination="@id/registerFragment"/>
+            app:destination="@id/registerFragment" />
 
         <action
             android:id="@+id/action_login_to_home"
             app:destination="@id/homeFragment"
             app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true"/>
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment
@@ -63,9 +64,23 @@
         android:name="com.example.aula.ui.HomeFragment"
         android:label="Home">
         <action
-    android:id="@+id/action_home_to_authGate"
-    app:destination="@id/authGateFragment"
-    app:popUpTo="@id/nav_graph"
-    app:popUpToInclusive="true"/>
+            android:id="@+id/action_home_to_authGate"
+            app:destination="@id/authGateFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_uwuFragment"
+            app:destination="@id/uwuFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/uwuFragment"
+        android:name="com.example.aula.ui.UwuFragment"
+        android:label="Uwu">
+
+        <action
+            android:id="@+id/action_uwuFragment_to_authGateFragment"
+            app:destination="@id/authGateFragment" />
+    </fragment>
+
 </navigation>
