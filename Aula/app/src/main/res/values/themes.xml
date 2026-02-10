@@ -48,7 +48,6 @@
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
     </style>
 
-
     <style name="AppTheme.Splash"
         parent="Theme.SplashScreen">
 
@@ -59,7 +58,7 @@
 
         <!-- Icono del splash -->
         <item name="windowSplashScreenAnimatedIcon">
-            @drawable/icono_splash
+            @drawable/nuevoicono
         </item>
 
         <!-- Tema que se aplicará tras el splash -->
@@ -68,5 +67,4 @@
         </item>
 
     </style>
-
 </resources>

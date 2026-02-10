@@ -47,4 +47,24 @@
         <item name="colorSurfaceContainerHigh">@color/md_theme_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/md_theme_surfaceContainerHighest</item>
     </style>
+
+    <style name="AppTheme.Splash"
+        parent="Theme.SplashScreen">
+
+        <!-- Color de fondo del splash -->
+        <item name="windowSplashScreenBackground">
+            @color/md_theme_primary
+        </item>
+
+        <!-- Icono del splash -->
+        <item name="windowSplashScreenAnimatedIcon">
+            @drawable/nuevoicono
+        </item>
+
+        <!-- Tema que se aplicará tras el splash -->
+        <item name="postSplashScreenTheme">
+            @style/AppTheme
+        </item>
+
+    </style>
 </resources>
