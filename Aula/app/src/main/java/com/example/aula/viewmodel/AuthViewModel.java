@@ -66,4 +66,8 @@ public class AuthViewModel extends ViewModel {
         repo.logout();
         _navEvent.setValue("LOGIN");
     }
+
+    public String getUID(){
+        return repo.getUID();
+    }
 }

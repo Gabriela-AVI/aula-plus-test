@@ -4,6 +4,15 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/authGateFragment">
 
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.aula.ui.ProfileFragment"
+        android:label="Profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_authGateFragment"
+            app:destination="@id/authGateFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/authGateFragment"
@@ -63,9 +72,12 @@
         android:name="com.example.aula.ui.HomeFragment"
         android:label="Home">
         <action
-    android:id="@+id/action_home_to_authGate"
-    app:destination="@id/authGateFragment"
-    app:popUpTo="@id/nav_graph"
-    app:popUpToInclusive="true"/>
+            android:id="@+id/action_home_to_authGate"
+            app:destination="@id/authGateFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
 </navigation>
