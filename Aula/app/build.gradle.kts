@@ -44,10 +44,10 @@ dependencies {
     implementation (platform(libs.firebase.bom))
     implementation (libs.firebase.auth)
     implementation (libs.firebase.firestore)
-    implementation("com.google.firebase:firebase-analytics")
+    implementation(libs.firebase.analytics)
     implementation(libs.core.splashscreen)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("androidx.core:core-splashscreen:1.2.0")
 }

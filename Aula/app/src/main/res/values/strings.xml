@@ -1,11 +1,6 @@
-
-<!-- TEXTOS ENLAZADOS (fragmet_home)-->
 <resources>
     <string name="app_name">Aula+</string>
-    <string name="cd_add_notice">Añadir aviso</string>
-    <string name="cd_logout">Cerrar sesión</string>
-    <string name="delete_last_notice">Borrar último</string>
-
-
-    <string name="btnUwu">Uwu delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aula_home">Aula+ (Home)</string>
 </resources>

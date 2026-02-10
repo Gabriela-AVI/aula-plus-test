@@ -31,13 +31,5 @@ public class InMemoryNoticeRepository {
         database.remove(database.size() - 1);
         return true;
     }
-
-    public boolean removeAll() {
-        if (database.isEmpty()) return false;
-        database.clear();
-        return true;
-    }
-
-
 }
 

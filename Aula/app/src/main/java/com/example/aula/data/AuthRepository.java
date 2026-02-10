@@ -1,6 +1,9 @@
 package com.example.aula.data;
 
+import androidx.annotation.Nullable;
+
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class AuthRepository {
 
@@ -10,6 +13,12 @@ public class AuthRepository {
     }
 
     private final FirebaseAuth auth = FirebaseAuth.getInstance();
+
+    @Nullable
+    public String getUID() {
+        FirebaseUser user = auth.getCurrentUser();
+        return user != null ? user.getUid() : null;
+    }
 
     public void login(String email, String pass, AuthCallback cb) {
         auth.signInWithEmailAndPassword(email, pass)

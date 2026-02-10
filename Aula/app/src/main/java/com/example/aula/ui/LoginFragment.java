@@ -11,8 +11,10 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.aula.R;
 import com.example.aula.data.AuthRepository;
+import com.example.aula.data.SettingsRepository;
 import com.example.aula.viewmodel.AuthViewModel;
 import com.example.aula.viewmodel.AuthViewModelFactory;
+import com.example.aula.viewmodel.SettingsViewModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.progressindicator.CircularProgressIndicator;
 import com.google.android.material.snackbar.Snackbar;
@@ -22,6 +24,7 @@ import com.google.android.material.textfield.TextInputLayout;
 public class LoginFragment extends Fragment {
 
     private AuthViewModel vm;
+
 
     public LoginFragment() { super(R.layout.fragment_login); }
 

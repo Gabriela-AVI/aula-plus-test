@@ -52,18 +52,6 @@ public class NoticeViewModel extends ViewModel {
         _eventoToast.setValue("Último aviso borrado");
     }
 
-    // BOTÓN BORRAR TODOS AVISOS ***
-    public void deleteAll(){
-        boolean ok = repo.removeAll();
-        if (!ok) {
-            _error.setValue("No hay avisos para borrar");
-            return;
-        }
-        refresh();
-        _eventoToast.setValue("Todo borrado");
-    }
-    //***
-
     private void refresh() {
         List<String> data = repo.getAll();
         if (data.isEmpty()) {
